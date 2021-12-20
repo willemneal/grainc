@@ -1,6 +1,6 @@
 {
   "name": "willem-grainc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js bundle to run grain compiler",
   "main": "index.js",
   "scripts": {
