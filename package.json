@@ -1,0 +1,19 @@
+{
+  "name": "grainc",
+  "version": "1.0.0",
+  "description": "js bundle to run grain compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willemneal/grainc.git"
+  },
+  "author": "Willem Wyndham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willemneal/grainc/issues"
+  },
+  "homepage": "https://github.com/willemneal/grainc#readme"
+}
