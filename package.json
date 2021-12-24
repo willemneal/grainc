@@ -44,5 +44,6 @@
   },
   "files": [
     "bin/"
-  ]
+  ],
+  "private": false
 }
