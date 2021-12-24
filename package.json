@@ -1,19 +1,45 @@
 {
-  "name": "willem-grainc",
-  "version": "1.0.1",
-  "description": "js bundle to run grain compiler",
+  "name": "@ahalabs/grain-cli",
+  "version": "0.4.5",
+  "description": "A command line tool for the Grain language.",
   "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link": "yarn link",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-pkg": "pkg ./package.json --no-bytecode --compress Brotli --output ../pkg/grain"
+  },
+  "pkg": {
+    "assets": "bin/*.js"
+  },
+  "bin": {
+    "grain": "bin/grain.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willemneal/grainc.git"
+    "url": "git+https://github.com/grain-lang/grain.git"
   },
-  "author": "Willem Wyndham",
+  "keywords": [
+    "grain",
+    "cli"
+  ],
+  "author": "Oscar Spencer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willemneal/grainc/issues"
+    "url": "https://github.com/grain-lang/grain/issues"
   },
-  "homepage": "https://github.com/willemneal/grainc#readme"
+  "homepage": "https://github.com/grain-lang/grain#readme",
+  "dependencies": {
+    "@grain/js-runner": "^0.4.0",
+    "@grain/stdlib": "^0.4.4",
+    "commander": "^8.1.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.3.1",
+    "prettier": "^2.3.2"
+  }
 }
